@@ -3,7 +3,6 @@ package redisclient
 import (
 	"abandoned-cart-listener/config"
 	"context"
-	"fmt"
 	"log"
 
 	"github.com/redis/go-redis/v9"
@@ -23,7 +22,6 @@ func init() {
 
 	_, err := Client.Ping(Ctx).Result()
 	if err != nil {
-		fmt.Println("abc")
 		log.Fatalf("Could not connect to Redis: %v", err)
 	}
 }
