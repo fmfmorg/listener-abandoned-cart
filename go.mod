@@ -1,4 +1,4 @@
-module listener-abandoned-cart
+module listener-connection
 
 go 1.23.1
 

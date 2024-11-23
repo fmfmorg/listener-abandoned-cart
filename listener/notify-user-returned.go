@@ -2,7 +2,7 @@ package listener
 
 import (
 	"fmt"
-	"listener-abandoned-cart/config"
+	"listener-connection/config"
 	"net/http"
 )
 

@@ -2,7 +2,7 @@ package cronjobs
 
 import (
 	"fmt"
-	"listener-abandoned-cart/config"
+	"listener-connection/config"
 	"log"
 	"net/http"
 	"time"

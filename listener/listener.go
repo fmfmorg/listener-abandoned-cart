@@ -2,9 +2,9 @@ package listener
 
 import (
 	"encoding/json"
-	"listener-abandoned-cart/config"
-	"listener-abandoned-cart/models"
-	"listener-abandoned-cart/redisclient"
+	"listener-connection/config"
+	"listener-connection/models"
+	"listener-connection/redisclient"
 	"log"
 	"time"
 )
