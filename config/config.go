@@ -17,4 +17,6 @@ var (
 	HashKeyAllConnections = os.Getenv("FM_REDIS_HASHKEY_ALL_CONNECTIONS")
 
 	WebshopApiUrl = os.Getenv("FM_CLIENT_WEBSHOP_API_URL")
+
+	IsProduction = os.Getenv("FM_ENV_MODE") == "production"
 )

@@ -2,6 +2,7 @@ package redisclient
 
 import (
 	"context"
+	"crypto/tls"
 	"listener-connection/config"
 	"log"
 
@@ -15,9 +16,12 @@ var (
 
 func init() {
 	Client = redis.NewClient(&redis.Options{
-		Addr:     config.RedisAddress,  // Replace with your Redis address
-		Password: config.RedisPassword, // No password
-		DB:       0,                    // Use default DB
+		Addr:     config.RedisAddress,
+		Password: config.RedisPassword,
+		DB:       0,
+		TLSConfig: &tls.Config{
+			InsecureSkipVerify: config.IsProduction,
+		},
 	})
 
 	_, err := Client.Ping(Ctx).Result()
