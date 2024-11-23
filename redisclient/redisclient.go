@@ -1,8 +1,8 @@
 package redisclient
 
 import (
-	"abandoned-cart-listener/config"
 	"context"
+	"listener-abandoned-cart/config"
 	"log"
 
 	"github.com/redis/go-redis/v9"

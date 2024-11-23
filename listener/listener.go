@@ -1,10 +1,10 @@
 package listener
 
 import (
-	"abandoned-cart-listener/config"
-	"abandoned-cart-listener/models"
-	"abandoned-cart-listener/redisclient"
 	"encoding/json"
+	"listener-abandoned-cart/config"
+	"listener-abandoned-cart/models"
+	"listener-abandoned-cart/redisclient"
 	"log"
 	"time"
 )

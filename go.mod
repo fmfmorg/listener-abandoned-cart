@@ -1,4 +1,4 @@
-module abandoned-cart-listener
+module listener-abandoned-cart
 
 go 1.23.1
 

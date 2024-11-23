@@ -1,9 +1,9 @@
 package main
 
 import (
-	"abandoned-cart-listener/cronjobs"
-	"abandoned-cart-listener/listener"
-	"abandoned-cart-listener/redisclient"
+	"listener-abandoned-cart/cronjobs"
+	"listener-abandoned-cart/listener"
+	"listener-abandoned-cart/redisclient"
 
 	"os"
 	"os/signal"

@@ -1,8 +1,8 @@
 package listener
 
 import (
-	"abandoned-cart-listener/config"
 	"fmt"
+	"listener-abandoned-cart/config"
 	"net/http"
 )
 
