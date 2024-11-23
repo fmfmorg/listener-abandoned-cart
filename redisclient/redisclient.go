@@ -3,6 +3,7 @@ package redisclient
 import (
 	"context"
 	"crypto/tls"
+	"fmt"
 	"listener-connection/config"
 	"log"
 	"time"
@@ -32,4 +33,6 @@ func init() {
 	if err != nil {
 		log.Fatalf("Could not connect to Redis: %v", err)
 	}
+
+	fmt.Println("Connected to Redis")
 }
