@@ -3,7 +3,6 @@ package redisclient
 import (
 	"context"
 	"crypto/tls"
-	"fmt"
 	"listener-connection/config"
 	"log"
 
@@ -16,9 +15,6 @@ var (
 )
 
 func init() {
-	fmt.Println("address: ", config.RedisAddress)
-	fmt.Println("password: ", config.RedisPassword)
-	fmt.Println("isProduction: ", config.IsProduction)
 	Client = redis.NewClient(&redis.Options{
 		Addr:     config.RedisAddress,
 		Password: config.RedisPassword,
